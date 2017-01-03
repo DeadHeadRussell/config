@@ -14,6 +14,8 @@ set showmatch
 set nowrap
 
 set backspace=indent,eol,start
+set wildmode=longest,list,full
+set wildmenu
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -22,6 +24,7 @@ cnoremap <C-n> <Down>
 cnoremap <C-Left> <S-Left>
 cnoremap <C-Right> <S-Right>
 
+nnoremap <C-J> :b#<CR>
 nnoremap <Space> :noh<CR>
 set hls
 
@@ -32,6 +35,7 @@ color distinguished
 syn on
 filetype plugin indent on
 
+au BufRead,BufNewFile *.scala set filetype=scala
 au BufRead,BufNewFile *.srp set filetype=serpent
 
 set noerrorbells visualbell t_vb=
