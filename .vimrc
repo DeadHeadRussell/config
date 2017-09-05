@@ -17,6 +17,8 @@ set backspace=indent,eol,start
 set wildmode=longest,list,full
 set wildmenu
 
+set lazyredraw
+
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 cnoremap <C-p> <Up>
